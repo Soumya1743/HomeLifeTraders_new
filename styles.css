@@ -142,7 +142,7 @@
     border: none;
     padding: 10px 25px;
     border-radius: 7px;
-    background-color: #156da9;
+    background-color: #E72929;
     cursor: pointer;
 }
 .input-box .button:active {
@@ -185,6 +185,7 @@
 #block1_1, #block1_2, #block1_3, #block1_4{
     max-width: 20rem;
     text-align: center;
+    cursor: pointer;
 }
 .block1_1heading, .block1_2heading, .block1_3heading, .block1_4heading{
     font-size: 1rem;
@@ -211,23 +212,128 @@
     justify-content: center;
     column-gap: 2rem;
     row-gap: 2rem;
+    cursor: pointer;
 }
 #category_block1 {
     border: 4px solid #0e2433;
-    border-radius: 20px 0px 20px 0px;
+    border-radius: 150px 150px 10px 10px;
     background-color: white;
     width: 15rem;
     padding: 2rem;
+    box-shadow: 0px 0px 30px orange inset;
 }
 #beauty_image {
-    width: 11rem;
-    border-radius: 20px 0px 20px 0px;
+    width: 10rem;
+    border-radius: 150px 150px 0px 0px;
 }
 #category_block1_title {
     text-align: center;
     padding-top: 1rem;
     color:#E72929;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
 }
+
+#products {
+    padding-top: 5rem;
+}
+#products_heading {
+    color: #156da9;
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+}
+#products_quote {
+    color: #E72929;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    font-family: serif;
+    font-style: italic;
+}
+
+#electronics,
+#home_appliances {
+    padding-top: 2rem;
+}
+#electronics_heading,
+#home_appliances_heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0rem 0rem 2rem 0rem;
+    color: gray;
+    letter-spacing: 8px;
+    font-weight: 100;
+}
+#electronics_block,
+#home_appliances_block {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+#electronics1 {
+    background-color: white;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.2s
+}
+#electronics1:hover {
+    box-shadow: 0px 0px 10px gray;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#electronics1_image {
+    width: 10rem;
+    border-radius: 10px;
+}
+#electronics1_title {
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+#type {
+    color: gray;
+}
+#stars {
+    width: 6rem;
+    display: block;
+}
+#done {
+    width: 1.4rem;
+}
+#in_stock {
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+#electronics1 p i {
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    color: #E72929;
+}
+#electronics1 p b {
+    color: #156da9;
+}
+#add_to_cart {
+    background-color: #006BFF;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#add_to_cart_image{
+    display: none;
+}
+
+
+::-webkit-scrollbar {
+    height: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 192, 0);
+    border-radius: 8rem;
+}
+
 
 
 
@@ -241,6 +347,14 @@
 }
 
 
+
+@media (max-width: 1300px) {
+    #electronics_block,
+    #home_appliances_block {
+        overflow: auto;
+        white-space: nowrap;
+    }
+}
 
 @media (max-width: 970px) {
     #side_navigation {
@@ -289,6 +403,7 @@
     }
     #hlt_main_body {
         margin-top: 6.9rem;
+        padding-bottom: 4rem;
     }
     #bottom_images{
         display: block;
@@ -298,6 +413,7 @@
         display: flex;
         justify-content: space-around;
         margin-top: 2rem;
+        padding: 0.5rem;
     }
 }
 
@@ -314,10 +430,10 @@
         row-gap: 1rem;
     }
     #beauty_image {
-        width: 6rem;
+        width: 7rem;
     }
     #category_block1 {
-        padding: 1rem;
+        padding: 0.5rem;
         width: 9rem;
     }
     #category_heading {
