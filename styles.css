@@ -266,8 +266,10 @@
 #electronics_block,
 #home_appliances_block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 2rem;
+    row-gap: 2rem;
 }
 #electronics1 {
     background-color: white;
@@ -330,14 +332,12 @@
 
 
 
-
 #bottom_images{
     display: none;
 }
 #cart_image, #wishlist, #profile{
     width: 2rem;
 }
-
 
 
 
