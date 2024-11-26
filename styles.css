@@ -325,14 +325,6 @@
 }
 
 
-::-webkit-scrollbar {
-    height: 0.2rem;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 192, 0);
-    border-radius: 8rem;
-}
 
 
 
@@ -348,13 +340,6 @@
 
 
 
-@media (max-width: 1300px) {
-    #electronics_block,
-    #home_appliances_block {
-        overflow: auto;
-        white-space: nowrap;
-    }
-}
 
 @media (max-width: 970px) {
     #side_navigation {
